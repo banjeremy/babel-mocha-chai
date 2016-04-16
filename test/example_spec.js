@@ -11,4 +11,11 @@ describe('example', () => {
       done();
     }, 10);
   });
+
+  it('should support object spread syntax', () => {
+    var x = { a: 1, b: 2 };
+    var y = { c: 3, a: 4 };
+
+    expect({...x, ...y}).to.deep.equal({ a: 4, b: 2, c: 3  });
+  });
 });
