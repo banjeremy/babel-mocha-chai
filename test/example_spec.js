@@ -13,9 +13,9 @@ describe('example', () => {
   });
 
   it('should support object spread syntax', () => {
-    var x = { a: 1, b: 2 };
-    var y = { c: 3, a: 4 };
+    const x = { a: 1, b: 2 };
+    const y = { c: 3, a: 4 };
 
-    expect({...x, ...y}).to.deep.equal({ a: 4, b: 2, c: 3  });
+    expect({ ...x, ...y }).to.deep.equal({ a: 4, b: 2, c: 3 });
   });
 });
